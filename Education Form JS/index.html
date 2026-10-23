@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Education Survey for Computer Programmers</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <h1>Education Survey for Computer Programmers</h1>
+
+    <form id="educationForm">
+
+        <div>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="education">Select Education Level:</label>
+            <select id="education" name="education" required>
+                <option value="">Select</option>
+                <option value="self-taught">Self-taught computer programmer</option>
+                <option value="online-course">Online course qualified</option>
+                <option value="diploma">Diploma qualified</option>
+                <option value="undergraduate">Undergraduate qualified</option>
+                <option value="postgraduate">Postgraduate qualified</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div class="form-row">
+            <label for="institution">Institution:</label>
+            <input type="text" id="institution" name="institution" required>
+        </div>
+
+        <br>
+
+        <div>
+            <fieldset>
+                <legend>Select your gender:</legend>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </fieldset>
+        </div>
+
+        <br>
+
+        <div>
+            <fieldset>
+                <legend>Select your interests:</legend>
+                <label><input type="checkbox" name="interests" value="web_development"> Web Development</label>
+                <label><input type="checkbox" name="interests" value="programming"> Programming</label>
+                <label><input type="checkbox" name="interests" value="information_technology"> Information
+                    Technology</label>
+            </fieldset>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="comments">Additional comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments"></textarea>
+        </div>
+
+        <br>
+
+        <div>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+
+    </form>
+
+    <footer>
+        <p><small>&copy; 2025 Patrick John Fitzgerald</p>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
